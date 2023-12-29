@@ -1,0 +1,15 @@
+.paradirectores{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navbar-brand{
+    color: red;
+
+}
+
+nav{
+    /* background-color: rgba(0, 0, 0, 0.213); */
+    /* justify-content: left; */
+    padding: 1em
+}

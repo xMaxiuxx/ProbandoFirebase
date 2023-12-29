@@ -1,0 +1,24 @@
+<!-- <h1>COMPONENTE HIJO</h1> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div>
+        <a [routerLink]="['/update',indice]" >
+        {{indice}}: {{empleadoDeLista.nombre}} {{empleadoDeLista.apellido}} </a> y tiene el cargo de <span > {{empleadoDeLista.cargo}}  </span>con un salario de 
+        {{empleadoDeLista.salario}} pesos
+      
+      </div>
+
+
+      <ul style="list-style:none ;">
+        <li *ngFor="let caracteristica of arrayCaracteristicas"> {{caracteristica}} </li>
+      </ul>
+
+      <app-caracteristicas-empleado (caracteristicasEmpleados)="agregarCaracteristicaalArray($event)"> </app-caracteristicas-empleado>
+
+
+
+    </div>
+  </div>
+</div> 
